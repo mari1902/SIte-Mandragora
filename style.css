@@ -34,6 +34,9 @@ body {
     color: white;
     font: var(--fonte-padrao);
 }
+.menu {
+    width: 40px;
+}
 
 input[type="checkbox"]
 {
@@ -81,10 +84,14 @@ nav a:hover {
 }
 
 label {
-    padding: 50px 50px 50px 90px;
+    padding: 50px 50px 50px 80px;
     position: absolute;
     z-index: 1;
     /* o z-index faz com que o elemento fique na frente do outro */
+}
+
+label img {
+    width: 40px;
 }
 
 .play {
@@ -97,6 +104,7 @@ label {
     background-color: #8553659f;
     padding: 3px 5px 3px 5px;
     color: #CC7F40;
+    position: float;
 }
 
 .play h2 {
