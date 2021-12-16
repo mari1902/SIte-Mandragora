@@ -27,94 +27,108 @@
 }
 
 body {
+    background-image: url(Mandragora\ -\ Photo\ Jandir\ RIbeiro-pequena.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #044454;
     color: white;
     font: var(--fonte-padrao);
 }
 
-header {
-    color: var(--cor2);
+input[type="checkbox"]
+{
+    display: none;
+}
+
+nav {
+    background-color: #445643b2;
+    width: 200px;
+    height: 100%;
+    left: -200px;
+    position: absolute;
+    transition: all .5s
+    ;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(200px);
+}
+
+ul {
+    background-color: #04445485;
+    position: absolute;
+    top: 70px;
+    width: 100%;
     text-align: center;
-    font: var(--fonte-mandragora);
+}  
+
+a {
+    display: block;
+    color: #cf9f78;
+    padding: 20px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: var(--fonte-padrao);
+    
 }
 
-header > h1 {
-    background-color: rgba(255, 255, 255, 0.527);
+nav a:hover {
+    background-color: #445643;
+    color: white;
+}
+
+label {
+    padding: 50px 50px 50px 90px;
+    position: absolute;
+    z-index: 1;
+    /* o z-index faz com que o elemento fique na frente do outro */
+}
+
+.play {
+    padding: 1em;
+    border-radius: .5em;
+    text-align: center;
+    border-radius: .5em;
+}
+.play h1 {
+    background-color: #8553659f;
+    padding: 3px 5px 3px 5px;
+    color: #CC7F40;
+}
+
+.play h2 {
+    background-color: #8553659f;
+    color: #CC7F40;
     padding: 0px 20px 0px 20px;
-}
-
-header > h2 {
-    background-color: rgba(255, 255, 255, 0.527);
-    padding: 0px 200px 0px 200px;
-    margin: 0px 400px 0px 400px;
+    
     width: 100px;
 }
 
-header > a {
+.play a {
     font-family: var(--fonte-padrao);
-    color: var(--cor0);
+    color: rgba(245, 245, 245, 0.863);
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.5em;
     border: 30px;
     width: 50px;
     margin: auto;
     padding: 7px;
-    border-color: var(--cor0);
     border-width: 10px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.13);
-    
-}
-nav {
-    background-color: #04445485;
-    padding: 17px 40px 17px 40px;
-    font: var(--fonte-padrao);
-    font-size: 1.1em;
-    border-color: var(--cor3);
-    text-align: right;
-    box-sizing: 60%;
+
 }
 
-nav > a {
-    color: var(--cor4);
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-}
-
-nav a:hover {
-    color: rgba(255, 255, 255, 0.582);
-    text-decoration: underline;
-}
-
-main {
-    font-size: 1.2em;
-    text-align: justify;
-    padding: 0px 120px 0px 120px;
-}
-
-article > h1 {
-    font-size: 1.6em;
-    padding: 30px 0px 30px 0px;
-}
-
-article p {
-    text-indent: 30px;
-    line-height: 1.6em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-    text-align: center;
-    columns: 2;
-    text-decoration: none;
-    list-style-type: none;
+.play a:hover {
+    background-color: #CC7F40;
 }
 
 aside {
     padding: 20px;
+    position: relative;
 }
 
 aside > h2 {
@@ -134,4 +148,5 @@ footer {
     text-align: center;
     font-size: 1em;
     padding: 5px;
+    p
 }
