@@ -94,28 +94,25 @@ label img {
     width: 40px;
 }
 
-.play {
+div.album {
     padding: 1em;
     border-radius: .5em;
     text-align: center;
     border-radius: .5em;
 }
-.play h1 {
+div#live {
     background-color: #8553659f;
     padding: 3px 5px 3px 5px;
     color: #CC7F40;
-    position: float;
 }
 
-.play h2 {
+div#now {
     background-color: #8553659f;
     color: #CC7F40;
-    padding: 0px 20px 0px 20px;
-    
-    width: 100px;
+    padding: 0px 0px 0px 0px;
 }
 
-.play a {
+div#play a {
     font-family: var(--fonte-padrao);
     color: rgba(245, 245, 245, 0.863);
     text-decoration: none;
@@ -130,7 +127,7 @@ label img {
 
 }
 
-.play a:hover {
+div#play a:hover {
     background-color: #CC7F40;
 }
 
@@ -151,10 +148,10 @@ aside > p {
 }
 
 footer {
+    display: block;
     background-color: var(--cor0);
     color: white;
     text-align: center;
     font-size: 1em;
     padding: 5px;
-    p
 }
