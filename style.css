@@ -27,50 +27,29 @@
 }
 
 body {
+    height: 100vh;
     background-image: url(Mandragora\ -\ Photo\ Jandir\ RIbeiro-pequena.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #044454;
+    background-position: center center;
     color: white;
     font: var(--fonte-padrao);
 }
-.menu {
-    width: 40px;
-}
-
-input[type="checkbox"]
-{
-    display: none;
-}
 
 nav {
-    background-color: #445643b2;
-    width: 200px;
-    height: 100%;
-    left: -200px;
-    position: absolute;
-    transition: all .5s
-    ;
-}
-
-input[type="checkbox"]:checked ~ nav
-{
-    transform: translateX(200px);
-}
-
-ul {
-    background-color: #04445485;
-    position: absolute;
-    top: 70px;
-    width: 100%;
+    float: right;
+    background-color: #4456434b;
+    margin: 10px 10px 10px 1000px;
     text-align: center;
-}  
+    padding: 15px 10px 15px 10px;
+    width: 400px;
+    position: right;
+}
 
-a {
-    display: block;
+nav a {
     color: #cf9f78;
-    padding: 20px 5px;
     border-radius: 5px;
+    padding: 10px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -79,19 +58,8 @@ a {
 }
 
 nav a:hover {
-    background-color: #445643;
     color: white;
-}
-
-label {
-    padding: 50px 50px 50px 80px;
-    position: absolute;
-    z-index: 1;
-    /* o z-index faz com que o elemento fique na frente do outro */
-}
-
-label img {
-    width: 40px;
+    text-decoration: underline;
 }
 
 div.album {
@@ -100,30 +68,36 @@ div.album {
     text-align: center;
     border-radius: .5em;
 }
-div#live {
-    background-color: #8553659f;
-    padding: 3px 5px 3px 5px;
+div#live h1 {
+    background-color: #85536541;
     color: #CC7F40;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    border-radius: 6px;
+    position: relative;
 }
 
-div#now {
-    background-color: #8553659f;
+div#now h2 {
+    background-color: #85536541;
     color: #CC7F40;
-    padding: 0px 0px 0px 0px;
+    padding: 10px;
+    width: 150px;
+    margin: auto;
+    border-radius: 6px;
+
 }
 
 div#play a {
     font-family: var(--fonte-padrao);
     color: rgba(245, 245, 245, 0.863);
     text-decoration: none;
-    font-size: 1.5em;
-    border: 30px;
+    font-size: 1.2em;
     width: 50px;
     margin: auto;
     padding: 7px;
-    border-width: 10px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: #85536541;
 
 }
 
