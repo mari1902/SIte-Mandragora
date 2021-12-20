@@ -28,6 +28,7 @@
 
 body {
     height: 100vh;
+    background-color: var(--cor4);
     background-image: url(Mandragora\ -\ Photo\ Jandir\ RIbeiro-pequena.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,27 +106,30 @@ div#play a:hover {
     background-color: #CC7F40;
 }
 
-aside {
+div#contact {
     padding: 20px;
-    position: relative;
+    position fixed;
+    bottom: 100px;
 }
 
-aside > h2 {
+div#contact > h2 {
     padding-bottom: 30px;
     font-size: 1.50em;
 }
 
-aside > p {
+div#contact > p {
     font-size: 1.2em;
     font-family: sans-serif;
     line-height: 1.3em;
 }
 
-footer {
-    display: block;
+div#footer {
     background-color: var(--cor0);
+    padding: 10px;
     color: white;
     text-align: center;
     font-size: 1em;
-    padding: 5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
