@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Sinkin';
-    src: url('fonts/SinkinSans-200XLight.otf') format('opentype');
+    src: url('fonts/SinkinSans-300Light.otf') format('opentype');
     font-weight: normal;
     
     font-family: 'Mandragora';
@@ -43,7 +43,7 @@ nav {
     margin: 10px 10px 10px 1000px;
     text-align: center;
     padding: 15px 10px 15px 10px;
-    width: 400px;
+    width: 440px;
     position: right;
 }
 
@@ -63,70 +63,70 @@ nav a:hover {
     text-decoration: underline;
 }
 
-div.album {
-    padding: 1em;
-    border-radius: .5em;
-    text-align: center;
-    border-radius: .5em;
+main {
+    position: relative;
+    top: 100px;
 }
+
 div#live h1 {
+    font-family: var(--fonte-padrao);
+    font-size: 2em;
     background-color: #85536541;
     color: #CC7F40;
-    width: 250px;
-    height: 150px;
+    font-weight: lighter;
+    padding: 10px;
+    width: 200px;
     margin: auto;
-    border-radius: 6px;
+    text-align: center;
+    border-radius: 6px; 
     position: relative;
+    top: 50px;   
 }
 
 div#now h2 {
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
     background-color: #85536541;
     color: #CC7F40;
     padding: 10px;
     width: 150px;
     margin: auto;
-    border-radius: 6px;
-
+    text-align: center;
+    border-radius: 6px; 
+    position: relative;
+    top: 80px;   
 }
 
 div#play a {
+    background-color: #85536541;
     font-family: var(--fonte-padrao);
-    color: rgba(245, 245, 245, 0.863);
+    color: var(--cor4);
+    text-align: center;
     text-decoration: none;
-    font-size: 1.2em;
-    width: 50px;
+    font-size: 1.3em;
     margin: auto;
+    width: 50px;
     padding: 7px;
     border-radius: 5px;
-    background-color: #85536541;
-
+    position: relative;
+    top: 110px;   
 }
 
 div#play a:hover {
-    background-color: #CC7F40;
+    text-decoration: underline;
 }
 
-div#contact {
-    padding: 20px;
-    position fixed;
-    bottom: 100px;
-}
-
-div#contact > h2 {
-    padding-bottom: 30px;
-    font-size: 1.50em;
-}
-
-div#contact > p {
-    font-size: 1.2em;
-    font-family: sans-serif;
-    line-height: 1.3em;
+div#spotify {
+    position: fixed;
+    bottom: 94px;
+    height: 10px;
+    width: 100%;
 }
 
 div#footer {
-    background-color: var(--cor0);
-    padding: 10px;
-    color: white;
+    background-color: #85536573;
+    padding: 3px;
+    color: whitesmoke;
     text-align: center;
     font-size: 1em;
     width: 100%;

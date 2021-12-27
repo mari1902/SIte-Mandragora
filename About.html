@@ -5,32 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Mandragora</title>
+    <script src="https://kit.fontawesome.com/b989f9f7fd.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="PASTA MANDRAGORA/Logo Mandragora/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
     <style>
+        
+        header > img {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: 50px;
+            left: 50%;
+        }
+
         body{
             background-color: #445643;
-            background-image: url('JuliaSalustiano-6579-2-pequeno.jpg');
+            background-image: url('foto_Julia_filtro@4x-80.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
 
-            background: #445643 url('JuliaSalustiano-6579-2-pequeno.jpg') center top no-repeat cover fixed;
+            background: #445643 url('PASTA\ MANDRAGORA/') center top no-repeat cover fixed;
             /* Shorthand - background
                 color >image > position > repeat > [size] > attachment
             */
         }
         main {
-            max-width: 500px;
+            position: relative;
+            top: 70px;
+            max-width: 700px;
             margin: auto;
             color: whitesmoke;
             text-indent: 30px;
             text-align: justify;
-            text
+            font-size: 1.3em;
+            line-height: 2em;
+            padding-bottom: 300px;
+
+        }
+        main > h1 {
+        padding: 50px 0px 30px 0px 
+        }
+        
+        div.cd {
+            display: inline-block;
+            border: .5px solid #044454; 
+            background-color: #445643;
+            width: 300px;
+            height: 260px;
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+
+        div#aovivo {
+            background-image: url(CDs/Front_image_DVD-pequeno.jpg);
+            background-position: center center;
+            margin: auto;
+
+        }
+
+        div#mandragora {
+            background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
+            background-position: center center;
         }
     </style>
 </head>
 <body>
+    <header>        
+        <nav>
+            <a href="#">Home</a>
+            <a href="About.html">About</a>
+            <a href="Albums.html">Albums</a>
+            <a href="photos.html">Photos</a>
+            <a href=""><i class="far fa-envelope"></i></a>
+            <a href="https://www.instagram.com/mandragorabrasil/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/mandragora.danielsarkisyjorgebrasil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-soundcloud"></i></a>
+
+        </nav> 
+    </header>
+
     <main>
     <h1>About</h1>
     <p>
@@ -42,5 +98,14 @@
         Em 2020 comemoraram seus 20 anos de carreira com o lançamento do CD/DVD Mandragora ao Vivo.
     </p>
     </main>
+        <aside>
+            <div class="cd" id="mandragora">
+
+            </div>
+    
+            <div class="cd" id="aovivo">
+    
+            </div> 
+        </aside>
 </body>
 </html>
