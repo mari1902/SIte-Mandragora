@@ -2,11 +2,7 @@
 
 @font-face {
     font-family: 'Sinkin';
-    src: url('fonts/SinkinSans-300Light.otf') format('opentype');
-    font-weight: normal;
-    
-    font-family: 'Mandragora';
-    src: url('fonts/Kinesis\ Std\ Semibold\ Italic.otf') format('opentype');
+    src: url('fonts/sinkinsans-300light.otf') format('opentype');
     font-weight: normal;
 }
 
