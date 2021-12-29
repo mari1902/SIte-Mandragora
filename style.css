@@ -2,7 +2,11 @@
 
 @font-face {
     font-family: 'Sinkin';
-    src: url('fonts/sinkinsans-300light.otf') format('opentype');
+    src: url('fonts/sinkinsans-100thin.otf') format('opentype');
+    font-weight: normal;
+
+    font-family: 'Mandragora';
+    src: url('fonts/kinesis\ std\ semibold\ italic.otf') format('opentype');
     font-weight: normal;
 }
 
@@ -64,14 +68,16 @@ main {
     top: 100px;
 }
 
-div#live h1 {
+
+div#live > p {
+    background-color: ;
     font-family: var(--fonte-padrao);
-    font-size: 2em;
-    background-color: #85536541;
+    font-size: 3em;
+    font-variant: small-caps;
     color: #CC7F40;
     font-weight: lighter;
-    padding: 10px;
-    width: 200px;
+    width: 350px;
+    height: 150px;
     margin: auto;
     text-align: center;
     border-radius: 6px; 
@@ -82,6 +88,7 @@ div#live h1 {
 div#now h2 {
     font-family: var(--fonte-padrao);
     font-weight: normal;
+    font-variant: small-caps;
     background-color: #85536541;
     color: #CC7F40;
     padding: 10px;
@@ -93,19 +100,25 @@ div#now h2 {
     top: 80px;   
 }
 
-div#play a {
-    background-color: #85536541;
+
+div#play {
+    background-color: #855365a9;
     font-family: var(--fonte-padrao);
-    color: var(--cor4);
     text-align: center;
-    text-decoration: none;
-    font-size: 1.3em;
-    margin: auto;
-    width: 50px;
-    padding: 7px;
-    border-radius: 5px;
     position: relative;
     top: 110px;   
+    width: 50px;
+    margin: auto;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+div#play a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: var(--cor4);
 }
 
 div#play a:hover {
