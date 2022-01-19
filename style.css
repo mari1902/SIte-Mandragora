@@ -164,33 +164,36 @@ section.imagem2 > p {
 section.cds {
     background-color: black;
     width: 100vp;
-    margin: auto;
-    padding: 30px ;
+    height: 500px;
+    padding: 30px 0px 30px 0px;
 }
 
-div.cd {
-    display: inline-block;
+article.cd {
     border: transparent ; 
     box-shadow: 1px solid black;
     width: 200px;
     height: 200px;
-    margin: auto;
+    position: absolute;
 }
 
-div#mandragora {
+article#mandragora {
     background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
-    margin: auto;
+    position: absolute;
+    left: 300px;
+    transform: translate(20px );
+    
 }
 
-div#paralelo31 {
+article#paralelo31 {
     background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
-    margin: auto;
+    position: absolute;
+    left: 500px;
 }
 
-div#aovivo {
+article#aovivo {
     background-image: url(CDs/Front_image_DVD-pequeno.jpg);
-    background-position: center center;
-    margin: auto;
+    position: absolute;
+    left: 800px;
 }
 
 div#footer {
