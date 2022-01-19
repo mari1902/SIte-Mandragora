@@ -28,7 +28,7 @@
     padding: 0px;
 }
 
-body {
+section.imagem1 {
     height: 100vh;
     background-color: var(--cor4);
     background-image: url(Mandragora\ -\ Photo\ Jandir\ RIbeiro-pequena.jpg);
@@ -57,19 +57,12 @@ nav a {
     font-weight: bold;
     font-size: 1.1em;
     font-style: var(--fonte-padrao);
-    
 }
 
 nav a:hover {
     color: white;
     text-decoration: underline;
 }
-
-main {
-    position: relative;
-    top: 100px;
-}
-
 
 div#live > p {
     background-color: ;
@@ -127,20 +120,85 @@ div#play a:hover {
     text-decoration: underline;
 }
 
-div#spotify {
-    position: fixed;
+section.autoplay {
     bottom: 94px;
-    height: 10px;
+    height: 80px;
     width: 100%;
+}
+section.imagem2 {
+    background-color: #445643;
+    background-image: url('foto_Julia_filtro@4x-80.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background: #445643 url('PASTA\ MANDRAGORA/') center top no-repeat cover fixed;
+    /* Shorthand - background
+        color >image > position > repeat > [size] > attachment
+    */
+}
+
+section.imagem2 > h1 {
+    color: whitesmoke;
+    width: 800px;
+    padding: 90px 100px 5px;
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+}
+section.imagem2 > p {
+    top: 50px;
+    max-width: 800px;
+    min-width: 400px;
+    margin: auto;
+    color: whitesmoke;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 3em;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+section.cds {
+    background-color: black;
+    width: 100vp;
+    margin: auto;
+    padding: 30px ;
+}
+
+div.cd {
+    display: inline-block;
+    border: transparent ; 
+    box-shadow: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+div#mandragora {
+    background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
+    margin: auto;
+}
+
+div#paralelo31 {
+    background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
+    margin: auto;
+}
+
+div#aovivo {
+    background-image: url(CDs/Front_image_DVD-pequeno.jpg);
+    background-position: center center;
+    margin: auto;
 }
 
 div#footer {
-    background-color: #85536573;
+    background-color: #855365;
     padding: 3px;
     color: whitesmoke;
     text-align: center;
     font-size: 1em;
     width: 100%;
-    position: fixed;
     bottom: 0;
 }

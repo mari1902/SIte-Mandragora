@@ -33,7 +33,6 @@
             */
         }
         main {
-            position: relative;
             top: 70px;
             max-width: 800px;
             min-width: 400px;
@@ -44,6 +43,7 @@
             font-size: 1.3em;
             line-height: 3em;
             padding-bottom: 300px;
+            position: relative;
         }
         
         main > h1 {
@@ -51,21 +51,43 @@
         }
         
         main > p {
-            display: inline-block;
+            
             padding: 5px;
             font-size: 2.5vw;
             
         }
+
+        section {
+
+        }
+        
+        section.cds {
+            background-color: black;
+            width: 800px;
+            margin: auto;
+            position: relative;
+            padding: 30px;
+        }
+
         div.cd {
             display: inline-block;
-            border: .5px solid #044454; 
-            background-color: #445643;
-            width: 300px;
-            height: 260px;
+            border: transparent ; 
+            box-shadow: 1px solid black;
+            width: 200px;
+            height: 200px;
             background-repeat: no-repeat;
             margin: auto;
         }
 
+        div#mandragora {
+            background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
+    
+        }
+        
+        div#paralelo31 {
+            background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
+        }
+        
         div#aovivo {
             background-image: url(CDs/Front_image_DVD-pequeno.jpg);
             background-position: center center;
@@ -73,9 +95,15 @@
 
         }
 
-        div#mandragora {
-            background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
-            background-position: center center;
+        footer {
+            background-color: #85536573;
+            padding: 3px;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 1em;
+            width: 100%;
+            bottom: -45px;
+            position: relative;
         }
     </style>
 </head>
@@ -94,28 +122,34 @@
     </header>
 
     <main>
-    <h1>About</h1>
-    <p>
-        Daniel Sarkis e Jorge Brasil formaram o Mandragora em 1999 em Brasília. Sua música se caracteriza como uma fusão entre diversos estilos e influências musicais, tais como música instrumental moderna, música Latina e World music.
-        Sua identidade musical baseia-se em sentimentos envolventes e técnica apurada. Eles evocam a suavidade do som do violão com a força de suas cordas de aço (violões de 6 e 12 cordas são utilizados). O duo também se destaca pela utilização de diferentes afinações e poliritimias em suas músicas com a intuito de explorar as possibilidades sonoras de seus instrumentos. Estão sempre em busca de melodias e ritmos únicos que os representem.
-        Como representantes da música instrumental do Brasil, o duo já se apresentou em alguns festivais, casas de Jazz e música instrumental no Brasil e também teve a oportunidade de levar sua música para outros países como, Cuba, Guatemala, Peru, Venezuela e Espanha.
-        A música do Mandragora toca em cheio o sentimento das pessoas independente de sua língua e cultura.
-        O Mandragora lançou seu primeiro album homônimo de estúdio em 2004 “Mandragora” e lançou seu segundo álbum entitulado “Paralelo 31” no Clube do Choro de Brasília em abril de 2014.
-        Em 2020 comemoraram seus 20 anos de carreira com o lançamento do CD/DVD Mandragora ao Vivo.
-    </p>
+    
+        <section class="imagem">
+            <h1>About</h1>
+                <p>
+            Daniel Sarkis e Jorge Brasil formaram o Mandragora em 1999 em Brasília. Sua música se caracteriza como uma fusão entre diversos estilos e influências musicais, tais como música instrumental moderna, música Latina e World music.
+            Sua identidade musical baseia-se em sentimentos envolventes e técnica apurada. Eles evocam a suavidade do som do violão com a força de suas cordas de aço (violões de 6 e 12 cordas são utilizados). O duo também se destaca pela utilização de diferentes afinações e poliritimias em suas músicas com a intuito de explorar as possibilidades sonoras de seus instrumentos. Estão sempre em busca de melodias e ritmos únicos que os representem.
+            Como representantes da música instrumental do Brasil, o duo já se apresentou em alguns festivais, casas de Jazz e música instrumental no Brasil e também teve a oportunidade de levar sua música para outros países como, Cuba, Guatemala, Peru, Venezuela e Espanha.
+            A música do Mandragora toca em cheio o sentimento das pessoas independente de sua língua e cultura.
+            O Mandragora lançou seu primeiro album homônimo de estúdio em 2004 “Mandragora” e lançou seu segundo álbum entitulado “Paralelo 31” no Clube do Choro de Brasília em abril de 2014.
+            Em 2020 comemoraram seus 20 anos de carreira com o lançamento do CD/DVD Mandragora ao Vivo.
+                </p>
+        </section>
+    
+       <section class="cds">
+           
+                <div class="cd" id="mandragora">
+                </div>
+                <div class="cd" id="paralelo31">
+                </div>
+                <div class="cd" id="aovivo">
+                </div>
+
+       </section>
+
+        
     </main>
-        <aside>
-            <div class="cd" id="mandragora">
-
-            </div>
-            <div class="cd" id="paralelo31">
-
-            </div>
-    
-            <div class="cd" id="aovivo">
-    
-            </div> 
-
-        </aside>
+    <footer>
+        <p>Site criado por Mari Sato </p>
+    </footer>
 </body>
 </html>
