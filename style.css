@@ -29,14 +29,12 @@
 }
 
 section.imagem1 {
-    height: 100vh;
+    height: 89vh;
     background-color: var(--cor4);
     background-image: url(Mandragora\ -\ Photo\ Jandir\ RIbeiro-pequena.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    color: white;
-    font: var(--fonte-padrao);
 }
 
 nav {
@@ -140,68 +138,84 @@ section.imagem2 {
 }
 
 section.imagem2 > h1 {
-    color: whitesmoke;
+    font-family: var(--fonte-mandragora);
+    color: rgba(245, 245, 245, 0.76);
     width: 800px;
     padding: 90px 100px 5px;
-    font-size: 3em;
+    font-size: 3.5em;
     margin: auto;
     text-align: center;
+    position: relative;
 }
+
 section.imagem2 > p {
     top: 50px;
     max-width: 800px;
     min-width: 400px;
     margin: auto;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.76);
     text-indent: 30px;
     text-align: justify;
+    font-family: var(--fonte-padrao);
     font-size: 1.5em;
-    line-height: 3em;
-    padding-bottom: 200px;
+    line-height: 2.5em;
+    padding-bottom: 110px;
     position: relative;
 }
 
 section.cds {
-    background-color: black;
-    width: 100vp;
+    background-color: rgba(0, 0, 0, 0.884);
     height: 500px;
-    padding: 30px 0px 30px 0px;
+    padding: 50px 0px 30px 0px;
+}
+
+section.cds > h1 {
+    font-family: var(--fonte-mandragora);
+    font-size: 3.5em;
+    color: rgba(245, 245, 245, 0.76);
+    margin: auto;
+    text-align: center;
+    padding: 30px 0px 70px 0px;
+}
+
+section.cds > h3 {
+    font-family: var(--fonte-mandragora);
+    font-size: 2.5em;
+    color: rgba(245, 245, 245, 0.76);
+    text-align: center;
+    display: inline-block;
 }
 
 article.cd {
-    border: transparent ; 
-    box-shadow: 1px solid black;
     width: 200px;
     height: 200px;
-    position: absolute;
 }
 
 article#mandragora {
     background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
-    position: absolute;
-    left: 300px;
-    transform: translate(20px );
-    
+    border: .5px solid rgba(245, 245, 245, 0.308);
+    margin: 10px 0px 10px 100px;
 }
 
 article#paralelo31 {
     background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
-    position: absolute;
-    left: 500px;
+    border: .5px solid rgba(245, 245, 245, 0.308);
+    margin: 10px 0px 10px 100px;
 }
 
 article#aovivo {
     background-image: url(CDs/Front_image_DVD-pequeno.jpg);
-    position: absolute;
-    left: 800px;
+    border: .5px solid rgba(245, 245, 245, 0.308);
+    margin: 0px;
 }
 
 div#footer {
     background-color: #855365;
-    padding: 3px;
+    padding: 4px;
     color: whitesmoke;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-family: var(--fonte-padrao);
     width: 100%;
     bottom: 0;
 }
