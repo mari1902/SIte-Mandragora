@@ -140,16 +140,13 @@ section.imagem2 {
 section.imagem2 > h1 {
     font-family: var(--fonte-mandragora);
     color: rgba(245, 245, 245, 0.76);
-    width: 800px;
     padding: 90px 100px 5px;
     font-size: 3.5em;
     margin: auto;
     text-align: center;
-    position: relative;
 }
 
 section.imagem2 > p {
-    top: 50px;
     max-width: 800px;
     min-width: 400px;
     margin: auto;
@@ -159,14 +156,16 @@ section.imagem2 > p {
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
     line-height: 2.5em;
-    padding-bottom: 110px;
+    padding: 0px 30px 0px 30px;
     position: relative;
 }
 
 section.cds {
     background-color: rgba(0, 0, 0, 0.884);
     height: 500px;
-    padding: 50px 0px 30px 0px;
+    padding: 40px 0px 30px 0px;
+    display: grid;
+    grid-template-columns: 200px 200px;
 }
 
 section.cds > h1 {
@@ -179,34 +178,32 @@ section.cds > h1 {
 }
 
 section.cds > h3 {
+    width: 300px;
     font-family: var(--fonte-mandragora);
     font-size: 2.5em;
-    color: rgba(245, 245, 245, 0.76);
     text-align: center;
-    display: inline-block;
+    margin: auto;
+    color: rgba(245, 245, 245, 0.76);
+    padding-bottom: 50px;
 }
 
-article.cd {
-    width: 200px;
+div.cd {
     height: 200px;
+    width: 200px;
+    border: .5px solid rgba(245, 245, 245, 0.308);
+    margin-left: 180px;
 }
 
-article#mandragora {
+#mandragora {
     background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
-    border: .5px solid rgba(245, 245, 245, 0.308);
-    margin: 10px 0px 10px 100px;
 }
 
-article#paralelo31 {
+#paralelo31 {
     background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
-    border: .5px solid rgba(245, 245, 245, 0.308);
-    margin: 10px 0px 10px 100px;
-}
+}    
 
-article#aovivo {
+#aovivo {
     background-image: url(CDs/Front_image_DVD-pequeno.jpg);
-    border: .5px solid rgba(245, 245, 245, 0.308);
-    margin: 0px;
 }
 
 div#footer {
