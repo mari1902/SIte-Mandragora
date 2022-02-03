@@ -44,7 +44,7 @@ nav {
     text-align: center;
     padding: 15px 10px 15px 10px;
     width: 400px;
-    position: right;
+    position: sticky;
 }
 
 nav a {
@@ -162,10 +162,8 @@ section.imagem2 > p {
 
 section.cds {
     background-color: rgba(0, 0, 0, 0.884);
-    height: 500px;
     padding: 40px 0px 30px 0px;
-    display: grid;
-    grid-template-columns: 200px 200px;
+    height: 500px;
 }
 
 section.cds > h1 {
@@ -177,21 +175,25 @@ section.cds > h1 {
     padding: 30px 0px 70px 0px;
 }
 
-section.cds > h3 {
+div.titulo {
     width: 300px;
     font-family: var(--fonte-mandragora);
     font-size: 2.5em;
     text-align: center;
     margin: auto;
     color: rgba(245, 245, 245, 0.76);
-    padding-bottom: 50px;
+    display: inline-block;
+    transform: translate(28%, -414%);
 }
 
 div.cd {
     height: 200px;
     width: 200px;
     border: .5px solid rgba(245, 245, 245, 0.308);
-    margin-left: 180px;
+    display: inline-block;
+    bottom: -50px;
+    margin-right: -43%;
+    transform: translate(-17%, 20%);
 }
 
 #mandragora {
