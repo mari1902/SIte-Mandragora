@@ -163,7 +163,8 @@ section.imagem2 > p {
 section.cds {
     background-color: rgba(0, 0, 0, 0.884);
     padding: 40px 0px 30px 0px;
-    height: 500px;
+    height: 450px;
+    position: relative;
 }
 
 section.cds > h1 {
@@ -176,36 +177,56 @@ section.cds > h1 {
 }
 
 div.titulo {
-    width: 300px;
+    width: 600px;
     font-family: var(--fonte-mandragora);
     font-size: 2.5em;
     text-align: center;
+    position: absolute;
     margin: auto;
     color: rgba(245, 245, 245, 0.76);
     display: inline-block;
-    transform: translate(28%, -414%);
+    top: 35%;
+    left: 23%;
+    transform: translate(-50%, -50%);
 }
 
 div.cd {
     height: 200px;
     width: 200px;
     border: .5px solid rgba(245, 245, 245, 0.308);
+    position: absolute;
     display: inline-block;
-    bottom: -50px;
-    margin-right: -43%;
-    transform: translate(-17%, 20%);
+    top: 70%;
+    left: 23%;
+    transform: translate(-50%, -60%);
+}
+
+#titulomandragora {
+    margin-right: 400px;
+}
+
+#tituloparalelo {
+    margin-left: 350px;
+} 
+
+#tituloaovivo {
+    margin-left: 700px;
 }
 
 #mandragora {
     background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
+    margin-right: 300px;
 }
 
 #paralelo31 {
     background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
+    margin-left: 350px;
+
 }    
 
 #aovivo {
     background-image: url(CDs/Front_image_DVD-pequeno.jpg);
+    margin-left: 700px;
 }
 
 div#footer {
