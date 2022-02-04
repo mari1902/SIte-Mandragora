@@ -12,10 +12,25 @@
     font-weight: normal;
 }
 
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(133, 83, 101, 0.295), 0 0 0 0 rgba(133, 83, 101, 0.400)
+    }
+    40%{
+        box-shadow: 0 0 0 5px rgba(133, 83, 101, 0), 0 0 0 3px rgba(133, 83, 101, 0)
+    }
+    80%{
+        box-shadow: 0 0 0 5px rgba(133, 83, 101, 0.295), 0 0 0 3px rgba(133, 83, 101, 0.400)
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(133, 83, 101, 0), 0 0 0 4px rgba(133, 83, 101, 0)
+    }
+}
+
 :root {
     --cor0: #634266;
     --cor1: #445643;
-    --cor2: #855365;
+    --cor2: rgb(133, 83, 101);
     --cor3: #044454;
     --cor4: #CC7F40;
 
@@ -78,51 +93,64 @@ div#live > p {
     top: 50px;   
 }
 
+div#now {
+    width: 150px;
+    border-radius: 6px; 
+    position: relative;
+    top: 80px;   
+    text-align: center;
+    margin: auto;
+}
+
 div#now h2 {
     font-family: var(--fonte-padrao);
     font-weight: normal;
     font-variant: small-caps;
-    background-color: #85536541;
     color: #CC7F40;
     padding: 10px;
-    width: 150px;
-    margin: auto;
-    text-align: center;
-    border-radius: 6px; 
-    position: relative;
-    top: 80px;   
 }
 
-
-div#play {
-    background-color: #855365a9;
-    font-family: var(--fonte-padrao);
-    text-align: center;
-    position: relative;
-    top: 110px;   
-    width: 50px;
-    margin: auto;
-    padding: 9px;
-    border-radius: 5px;
+button#play {
+    position: absolute;
+    top: 50%;   
+    left: 47%;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(133, 83, 101, 0.295);
+    backdrop-filter: blur(10px);
+    animation: pulse 2s linear infinite;
 }
 
-div#play a {
-    text-decoration: none;
+button#play a {
+    font-family: var(--fonte-padrao);text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
     font-variant: small-caps;
     color: var(--cor4);
 }
 
-div#play a:hover {
+button#play a:hover {
     text-decoration: underline;
 }
 
-section.autoplay {
-    bottom: 94px;
-    height: 80px;
-    width: 100%;
+div#dvd {
+    background-color: var(--cor1);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
 }
+
+div#dvd > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 section.imagem2 {
     background-color: #445643;
     background-image: url('foto_Julia_filtro@4x-80.jpg');
