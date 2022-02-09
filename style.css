@@ -14,7 +14,7 @@
 
 @keyframes pulse {
     0%{
-        box-shadow: 0 0 0 0 rgba(133, 83, 101, 0.295), 0 0 0 0 rgba(133, 83, 101, 0.400)
+        box-shadow: 0 0 0 0 rgba(133, 83, 101, 0.541), 0 0 0 0 rgba(133, 83, 101, 0.400)
     }
     40%{
         box-shadow: 0 0 0 5px rgba(133, 83, 101, 0), 0 0 0 3px rgba(133, 83, 101, 0)
@@ -43,22 +43,14 @@
     padding: 0px;
 }
 
-section.imagem1 {
-    height: 89vh;
-    background-color: var(--cor4);
-    background-image: url(Mandragora\ -\ Photo\ Jandir\ RIbeiro-pequena.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
 nav {
+    font-size: 1em;
     float: right;
     background-color: #4456434b;
     margin: 10px 10px 10px 1000px;
     text-align: center;
     padding: 15px 10px 15px 10px;
-    width: 400px;
+    width: 420px;
     position: sticky;
 }
 
@@ -77,8 +69,19 @@ nav a:hover {
     text-decoration: underline;
 }
 
-div#live > p {
-    background-color: ;
+section.imagem1 {
+    height: 100vh;
+    background-color: var(--cor4);
+    background-image: url(Mandragora\ -\ Photo\ Jandir\ RIbeiro-pequena.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+div#live > h1 {
+    top: 15%;   
+    left: 37%;
     font-family: var(--fonte-padrao);
     font-size: 3em;
     font-variant: small-caps;
@@ -88,26 +91,21 @@ div#live > p {
     height: 150px;
     margin: auto;
     text-align: center;
-    border-radius: 6px; 
-    position: relative;
-    top: 50px;   
+    position: absolute;  
 }
 
-div#now {
+div#available {
+    top: 38%;   
+    left: 44%;
     width: 150px;
-    border-radius: 6px; 
-    position: relative;
-    top: 80px;   
+    position: absolute;
     text-align: center;
     margin: auto;
-}
-
-div#now h2 {
     font-family: var(--fonte-padrao);
+    font-size: 1.5em;
     font-weight: normal;
     font-variant: small-caps;
     color: #CC7F40;
-    padding: 10px;
 }
 
 button#play {
@@ -118,7 +116,7 @@ button#play {
     height: 70px;
     border: none;
     border-radius: 50%;
-    background: rgba(133, 83, 101, 0.295);
+    background: rgba(133, 83, 101, 0.603);
     backdrop-filter: blur(10px);
     animation: pulse 2s linear infinite;
 }
@@ -134,21 +132,28 @@ button#play a {
 button#play a:hover {
     text-decoration: underline;
 }
+div#dvd > h2 {
+    text-align: center;
+    font-family: var(--fonte-mandragora);
+    font-size: 4em;
+    padding-top: 20px;
+}
 
 div#dvd {
-    background-color: var(--cor1);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    padding-bottom: 59%;
+    width: auto;
+    height: 700px;
+    background-color: #5a7259;
     position: relative;
 }
 
 div#dvd > iframe {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 5%;
+    border: 60px solid #044454;
+    box-shadow: 1px solid black;
     width: 90%;
-    height: 90%;
+    height: 80%;
 }
 
 section.imagem2 {
@@ -174,20 +179,6 @@ section.imagem2 > h1 {
     text-align: center;
 }
 
-section.imagem2 > p {
-    max-width: 800px;
-    min-width: 400px;
-    margin: auto;
-    color: rgba(245, 245, 245, 0.76);
-    text-indent: 30px;
-    text-align: justify;
-    font-family: var(--fonte-padrao);
-    font-size: 1.5em;
-    line-height: 2.5em;
-    padding: 0px 30px 0px 30px;
-    position: relative;
-}
-
 section.cds {
     background-color: rgba(0, 0, 0, 0.884);
     padding: 40px 0px 30px 0px;
@@ -201,7 +192,6 @@ section.cds > h1 {
     color: rgba(245, 245, 245, 0.76);
     margin: auto;
     text-align: center;
-    padding: 30px 0px 70px 0px;
 }
 
 div.titulo {

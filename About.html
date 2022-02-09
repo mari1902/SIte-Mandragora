@@ -22,15 +22,15 @@
         body{
             background-color: #445643;
             background-image: url('foto_Julia_filtro@4x-80.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
 
             background: #445643 url('PASTA\ MANDRAGORA/') center top no-repeat cover fixed;
-            /* Shorthand - background
-                color >image > position > repeat > [size] > attachment
-            */
+             /* Shorthand - background
+             color >image > position > repeat > [size] > attachment
+             */
         }
         main {
             top: 70px;
@@ -46,64 +46,38 @@
             position: relative;
         }
         
-        main > h1 {
-            padding: 50px 0px 30px 0px 
-        }
-        
-        main > p {
-            
-            padding: 5px;
-            font-size: 2.5vw;
-            
-        }
-
-        section {
-
-        }
-        
-        section.cds {
-            background-color: black;
-            width: 800px;
+        section.imagem > h1 {
+            font-family: var(--fonte-mandragora);
+            color: rgba(245, 245, 245, 0.76);
+            padding: 90px 100px 5px;
+            font-size: 3.5em;
             margin: auto;
+            text-align: center;
+        }
+        
+        section.imagem > p {
+            max-width: 800px;
+            min-width: 400px;
+            margin: auto;
+            color: rgba(245, 245, 245, 0.76);
+            text-indent: 30px;
+            text-align: justify;
+            font-family: var(--fonte-padrao);
+            font-size: 1.3em;
+            line-height: 1.7em;
+            padding: 0px 30px 0px 30px;
             position: relative;
-            padding: 30px;
-        }
-
-        div.cd {
-            display: inline-block;
-            border: transparent ; 
-            box-shadow: 1px solid black;
-            width: 200px;
-            height: 200px;
-            background-repeat: no-repeat;
-            margin: auto;
-        }
-
-        div#mandragora {
-            background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
-    
-        }
-        
-        div#paralelo31 {
-            background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
-        }
-        
-        div#aovivo {
-            background-image: url(CDs/Front_image_DVD-pequeno.jpg);
-            background-position: center center;
-            margin: auto;
-
         }
 
         footer {
-            background-color: #85536573;
-            padding: 3px;
+            background-color: #855365;
+            padding: 4px;
             color: whitesmoke;
             text-align: center;
-            font-size: 1em;
+            font-size: 1.2em;
+            font-family: var(--fonte-padrao);
             width: 100%;
-            bottom: -45px;
-            position: relative;
+            bottom: 0;
         }
     </style>
 </head>
@@ -125,6 +99,7 @@
     
         <section class="imagem">
             <h1>About</h1>
+            <br>
                 <p>
             Daniel Sarkis e Jorge Brasil formaram o Mandragora em 1999 em Brasília. Sua música se caracteriza como uma fusão entre diversos estilos e influências musicais, tais como música instrumental moderna, música Latina e World music.
             Sua identidade musical baseia-se em sentimentos envolventes e técnica apurada. Eles evocam a suavidade do som do violão com a força de suas cordas de aço (violões de 6 e 12 cordas são utilizados). O duo também se destaca pela utilização de diferentes afinações e poliritimias em suas músicas com a intuito de explorar as possibilidades sonoras de seus instrumentos. Estão sempre em busca de melodias e ritmos únicos que os representem.
@@ -134,19 +109,6 @@
             Em 2020 comemoraram seus 20 anos de carreira com o lançamento do CD/DVD Mandragora ao Vivo.
                 </p>
         </section>
-    
-       <section class="cds">
-           
-                <div class="cd" id="mandragora">
-                </div>
-                <div class="cd" id="paralelo31">
-                </div>
-                <div class="cd" id="aovivo">
-                </div>
-
-       </section>
-
-        
     </main>
     <footer>
         <p>Site criado por Mari Sato </p>
