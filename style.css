@@ -194,18 +194,11 @@ section.cds > h1 {
     text-align: center;
 }
 
-div.titulo {
-    width: 600px;
+div.columns is-mobile {
     font-family: var(--fonte-mandragora);
     font-size: 2.5em;
     text-align: center;
-    position: absolute;
-    margin: auto;
     color: rgba(245, 245, 245, 0.76);
-    display: inline-block;
-    top: 35%;
-    left: 23%;
-    transform: translate(-50%, -50%);
 }
 
 div.cd {
@@ -220,31 +213,51 @@ div.cd {
 }
 
 #titulomandragora {
-    margin-right: 400px;
+    font-family: var(--fonte-mandragora);
+    font-size: 2em;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.76);
 }
 
 #tituloparalelo {
-    margin-left: 350px;
+    font-family: var(--fonte-mandragora);
+    font-size: 2em;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.76);
 } 
 
 #tituloaovivo {
-    margin-left: 700px;
+    font-family: var(--fonte-mandragora);
+    font-size: 2em;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.76);
 }
 
 #mandragora {
     background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
-    margin-right: 300px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 #paralelo31 {
     background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
-    margin-left: 350px;
-
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }    
 
 #aovivo {
     background-image: url(CDs/Front_image_DVD-pequeno.jpg);
-    margin-left: 700px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 div#footer {
