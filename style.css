@@ -108,9 +108,9 @@ div#available {
 }
 
 button#play {
+    display: flex;
     justify-content: center;
-    top: 140px;   
-    left: 600px;
+    margin: 140px auto;
     width: 70px;
     height: 70px;
     border: none;
@@ -123,6 +123,7 @@ button#play {
 button#play a {
     font-family: var(--fonte-padrao);text-decoration: none;
     font-size: 1.5em;
+    line-height: 64px;
     font-weight: bold;
     font-variant: small-caps;
     color: var(--cor4);
@@ -132,28 +133,37 @@ button#play a {
 button#play a:hover {
     text-decoration: underline;
 }
-div#dvd > h2 {
-    text-align: center;
-    font-family: var(--fonte-mandragora);
-    font-size: 3em;
-    padding-top: 7px;
-}
 
-div#dvd {
+.dvd {
+    box-sizing: border-box;
+    justify-content: center;
     width: auto;
     height: 700px;
     background-color: #5a7259;
     position: relative;
 }
 
-div#dvd > iframe {
-    box-sizing: border-box;
-    top: 10%;
-    left: 5%;
-    border: 60px solid #044454;
-    box-shadow: 1px solid black;
-    width: 90%;
-    height: 80%;
+.dvd > h2 {
+    text-align: center;
+    font-family: var(--fonte-mandragora);
+    font-size: 3em;
+    padding-top: 10px;
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+    border: 20px solid #044454;
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.youtube > iframe {
+    width: 800px;
+    height: 500px;
+    flex-wrap: wrap;
 }
 
 section.imagem2 {
@@ -163,7 +173,6 @@ section.imagem2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
     background: #445643 url('PASTA\ MANDRAGORA/') center top no-repeat cover fixed;
     /* Shorthand - background
         color >image > position > repeat > [size] > attachment
@@ -179,14 +188,14 @@ section.imagem2 > h1 {
     text-align: center;
 }
 
-section.cds {
+.cds {
     background-color: rgba(0, 0, 0, 0.884);
     padding: 40px 0px 30px 0px;
     height: 450px;
     position: relative;
 }
 
-section.cds > h1 {
+.cds > h1 {
     font-family: var(--fonte-mandragora);
     font-size: 3.5em;
     color: rgba(245, 245, 245, 0.76);
@@ -194,69 +203,45 @@ section.cds > h1 {
     text-align: center;
 }
 
-.flex-container {
+.tituloscds {
     display: flex;
     gap: 114px;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
-.flex-item {
+.titulocd {
+    height: 190px;
+    width: 190px;
     font-family: var(--fonte-mandragora);
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    line-height: 420px;
     color: rgba(245, 245, 245, 0.76);
-    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-.encartecd {
-    display: flex;
-    gap: 60px;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-
-.cd {
-    height: 200px;
-    width: 200px;
-    border: .5px solid rgba(245, 245, 245, 0.308);
-    display: inline-block;
-}
-
-#mandragora {
+#titulomandragora {
     background-image: url(CDs/CD\ mandragora-pequeno.jpeg);
-    width: 200px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
-#paralelo31 {
+#tituloparalelo {
     background-image: url(CDs/Paralelo\ 31-pequeno.jpg);
-    width: 200px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }    
 
-#aovivo {
+#tituloaovivo {
     background-image: url(CDs/Front_image_DVD-pequeno.jpg);
-    width: 200px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
-footer {
+/* footer {
     background-color: #855365;
     padding: 4px;
     color: whitesmoke;
     text-align: center;
     font-size: 1.2em;
     font-family: var(--fonte-padrao);
-    width: 100%;
-    bottom: 0;
-}
+} */

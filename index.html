@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Mandragora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.min.css">
     <script src="https://kit.fontawesome.com/b989f9f7fd.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="PASTA MANDRAGORA/Logo Mandragora/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -47,9 +48,11 @@
         
         <section>   
     
-        <div id="dvd">
+        <div class="dvd">
             <h2>"Chuva de Pedra" Song</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/T5U_I7jpC0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="youtube"> 
+                <iframe src="https://www.youtube.com/embed/T5U_I7jpC0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
 
         </section>
@@ -58,22 +61,20 @@
 
             <h1>Albuns</h1>
 
-            <div class="flex-container">
-                <div class="flex-item" id="titulomandragora">"Mandragora"</div>
-                <div class="flex-item" id="tituloparalelo">"Paralelo 31"</div>
-                <div class="flex-item" id="tituloaovivo" >"Mandragora <br> Ao Vivo"</div>
-            </div>
-
-            <div class="encartecd">
-                <div class="cd" id="mandragora"></div>
-                <div class="cd" id="paralelo31"></div>
-                <div class="cd" id="aovivo"></div>
+            <div class="tituloscds">
+                <div class="titulocd" id="titulomandragora">"Mandragora"</div>
+                <div class="titulocd" id="tituloparalelo">"Paralelo 31"</div>
+                <div class="titulocd" id="tituloaovivo" >"Ao Vivo"</div>
             </div>
         </section>
 
 </main> 
-<footer>
-        <p>Site criado por Mari Nagatani </p>
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Mandragora Site</strong> by <a href="https://jgthms.com">Mari Nagatani.</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
