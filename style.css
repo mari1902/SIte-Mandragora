@@ -79,7 +79,7 @@ section.imagem1 {
 }
 
 
-div#live > h1 {
+#live > h1 {
     top: 90px;   
     font-family: var(--fonte-padrao);
     font-size: 3em;
@@ -94,7 +94,7 @@ div#live > h1 {
     position: relative;  
 }
 
-div#available {
+#available {
     top: 130px;   
     width: 150px;
     position: relative;
@@ -121,13 +121,13 @@ button#play {
 }
 
 button#play a {
-    font-family: var(--fonte-padrao);text-decoration: none;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
     font-size: 1.5em;
     line-height: 64px;
     font-weight: bold;
     font-variant: small-caps;
     color: var(--cor4);
-    text-decoration: none;
 }
 
 button#play a:hover {
@@ -136,37 +136,50 @@ button#play a:hover {
 
 .dvd {
     box-sizing: border-box;
-    justify-content: center;
-    width: auto;
-    height: 700px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 400px;
+    grid-auto-rows: minmax(65px, auto);
     background-color: #5a7259;
-    position: relative;
-}
-
-.dvd > h2 {
-    text-align: center;
-    font-family: var(--fonte-mandragora);
-    font-size: 3em;
-    padding-top: 10px;
 }
 
 .youtube {
-    display: flex;
-    justify-content: center;
-    border: 20px solid #044454;
-    margin: 20px auto;
-    width: 800px;
-    height: 500px;
+    display: grid;
+    margin: auto;
+    width: 84%;
+    height: 70%;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .youtube > iframe {
-    width: 800px;
-    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     flex-wrap: wrap;
 }
 
-section.imagem2 {
+.dvd > h2 {
+    text-align: left;
+    font-family: var(--fonte-mandragora);
+    font-size: 2em;
+    padding-left: 15%;
+}
+
+.side-bar {
+    background-color: rgba(0, 128, 0, 0.178);
+}
+
+.side-video {
+    width: 70%;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #bbb;
+}
+
+.imagem2 {
     background-color: #445643;
     background-image: url('foto_Julia_filtro@4x-80.jpg');
     background-position: center center;
@@ -189,9 +202,9 @@ section.imagem2 > h1 {
 }
 
 .cds {
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgba(0, 0, 0, 0.795);
     padding: 40px 0px 30px 0px;
-    height: 450px;
+    height: 350px;
     position: relative;
 }
 
@@ -208,8 +221,7 @@ section.imagem2 > h1 {
     gap: 114px;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 20px auto;
+    margin: auto;
 }
 
 .titulocd {
@@ -237,11 +249,27 @@ section.imagem2 > h1 {
     background-image: url(CDs/Front_image_DVD-pequeno.jpg);
 }
 
-/* footer {
-    background-color: #855365;
+footer {
+    background-color: #855365e1;
     padding: 4px;
     color: whitesmoke;
     text-align: center;
     font-size: 1.2em;
     font-family: var(--fonte-padrao);
-} */
+}
+
+footer > p a{
+    text-decoration: none;
+    color: #634266;
+}
+footer > p a:hover {
+    text-decoration: none;
+    color: #CC7F40;
+}
+
+@media (max-width: 800px){
+    .cds {
+        grid-column: 1/4;
+        
+    }
+}
