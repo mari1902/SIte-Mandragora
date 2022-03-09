@@ -135,37 +135,32 @@ button#play a:hover {
 }
 
 .dvd {
+    display: grid;
     box-sizing: border-box;
     min-height: 100vh;
-    display: grid;
     grid-template-columns: 2fr 400px;
     grid-auto-rows: minmax(65px, auto);
     background-color: #5a7259;
 }
 
-.youtube {
-    display: grid;
-    margin: auto;
-    width: 84%;
-    height: 70%;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.youtube > iframe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-}
-
 .dvd > h2 {
+    color: #bbb;
     text-align: left;
     font-family: var(--fonte-mandragora);
     font-size: 2em;
     padding-left: 15%;
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.youtube > iframe {
+    width: 90%;
+    height: 78%;
 }
 
 .side-bar {
@@ -177,6 +172,22 @@ button#play a:hover {
     height: 150px;
     margin: 20px auto;
     background-color: #bbb;
+}
+
+#tatanka {
+    
+}
+
+#sideral {
+
+}
+
+#entrevista {
+
+}
+
+#antigua {
+
 }
 
 .imagem2 {
@@ -270,6 +281,6 @@ footer > p a:hover {
 @media (max-width: 800px){
     .cds {
         grid-column: 1/4;
-        
+
     }
 }
