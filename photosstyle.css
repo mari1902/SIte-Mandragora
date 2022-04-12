@@ -1,0 +1,72 @@
+@charset "UTF-8"
+
+@font-face {
+    font-family: 'Sinkin';
+    src: url('fonts/sinkinsans-100thin.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Mandragora';
+    src: url('fonts/kinesis\ std\ semibold\ italic.otf') format('opentype');
+    font-weight: normal;
+}
+:root {
+    --cor0: #634266;
+    --cor1: #445643;
+    --cor2: rgb(133, 83, 101);
+    --cor3: #044454;
+    --cor4: #CC7F40;
+
+    --fonte-padrao: 'Sinkin', Arial, Verdana, sans-serif;
+    --fonte-mandragora: 'Mandragora';
+}
+
+* {
+    margin: 0px; 
+    padding: 0px;
+}
+
+body {
+    background-color: #634266;
+}
+
+.navbar {
+    font-size: 1em;
+    float: right;
+    background-color: #4456434b;
+    margin: 10px 10px 10px;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+    width: 420px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #cf9f78;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: var(--fonte-padrao);
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.galeria {
+    background-color: #445643;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    display: grid;
+    grid-template-areas: "imagem-1 imagem-2 imagem-2" "imagem-1 imagem-2 imagem-2" "imagem-1 imagem-3 imagem-4" "imagem-5 imagem-5 imagem-4";
+}
+.galeria > h1 {
+    font: var(--fonte-mandragora);
+    font-size: 5em;
+}
