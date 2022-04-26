@@ -99,27 +99,45 @@
             </div>
         </section>
 
-        <form action="" method="POST">
-            <fieldset>
-                <legend>
-                    Não perca os próximos shows do Mandragora!
-                </legend>
-                <label for="">
-                    Nome:
-                    <input type="text" name="" id="">
-                </label>
-                
-                <label for="">
-                    E-mail: 
-                    <input type="email">
-                </label>
-               
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
 </main> 
 <footer>   
-    <p>Mandragora Site by <a href="https://github.com/mari1902" target="_blank">Mari Nagatani.</a></p>
+    <form action="" method="POST">
+        <div>
+            <legend>
+                Não perca os próximos shows do Mandragora!
+            </legend>
+        </div>
+        <div>
+            <label for="">
+                Nome:
+                <input type="text"
+                name="nome" id=""
+                autocomplete="name"
+                required
+                >
+            </label>
+            
+            <label for="">
+                E-mail:
+                <input type="email"
+                name="email"
+                autocomplete="email"
+                required
+                title="Por favor adicione um e-mail válido"
+                >
+            </label>
+        </div>
+        <div>
+            <label for="subscribe">Receber notificações</label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+    <div>
+        <p>Mandragora Site by <a href="https://github.com/mari1902" target="_blank">Mari Nagatani.</a></p>
+    </div>
 </footer>
 </body>
 </html>
