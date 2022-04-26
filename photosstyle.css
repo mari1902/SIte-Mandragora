@@ -31,6 +31,24 @@ body {
     background-color: #634266;
 }
 
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+}
+
 .navbar {
     font-size: 1em;
     float: right;
@@ -38,9 +56,7 @@ body {
     margin: 10px 10px 10px;
     text-align: center;
     padding: 15px 10px 15px 10px;
-    width: 420px;
-    position: sticky;
-    top: 0;
+    width: 330px;
 }
 
 nav a {
@@ -58,13 +74,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
 #tituloFotos {
     font-size: 4.0em; 
     font-family: var(--fonte-mandragora);
     color: antiquewhite;
     margin: auto;
     width: fit-content;
-    margin-top: 100px;
 }
 
 .grid {
@@ -171,20 +187,15 @@ nav a:hover {
     padding: 100px;
 }
 
-#mapaPalco {
-    display: inline-block;
-    font-size: 2.0em; 
+.maisinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+    margin: auto;
+    font-size: 3.0em; 
     font-family: var(--fonte-mandragora);
     color: antiquewhite;
-    margin: auto;
-    width: fit-content;
-}
-
-#rider {
-    display: inline-block;
-    font-size: 2.0em; 
-    font-family: var(--fonte-mandragora);
-    color: antiquewhite;
-    margin: auto;
     width: fit-content;
 }

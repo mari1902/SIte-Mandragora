@@ -43,9 +43,24 @@
     padding: 0px;
 }
 
-/*
-tornar o menu hamburger quando for celular 
-*/
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+}
+
 .navbar {
     font-size: 1em;
     float: right;
@@ -53,9 +68,7 @@ tornar o menu hamburger quando for celular
     margin: 10px 10px 10px;
     text-align: center;
     padding: 15px 10px 15px 10px;
-    width: 420px;
-    position: relative;
-    top: 0;
+    width: 330px;
 }
 
 nav a {
@@ -73,12 +86,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#fotoJandir {
-    position: absolute;
-}
-
 section.imagem1 {
     background-color: var(--cor4);
+    background-image: url(02\ Mandragora\ -\ Photo\ Jandir\ RIbeiro.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
 }
 
 #logo {
@@ -152,6 +166,7 @@ button#play a:hover {
     text-decoration: underline;
 }
 
+
 .dvd {
     background-color: rgb(0, 0, 0, 0.795);
 }
@@ -164,7 +179,7 @@ button#play a:hover {
     font-family: var(--fonte-mandragora);
     font-size: 3.5em;
     margin: auto;
-    padding-top: 90px;
+    padding-top: 50px;
 }
 
 #youtube {
@@ -177,43 +192,36 @@ button#play a:hover {
     align-items: center;
     flex-wrap: wrap;
     height: 540px;
-    width: 950px;
+    width: 750px;
     margin: auto;
 }
 
 .youtube > iframe {
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 75%;
+    border: 13px solid rgb(92, 90, 90);
+
 }
 
 .bottom-bar {
-    background-color: rgb(0, 0, 0, 0.795);
+    background-color: rgba(92, 81, 81, 0.795);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    height: 300px;
+    height: 250px;
 }
 
 .bottom-video {
     margin: auto;
-}
-
-#tatanka {
+    border: 13px solid rgb(52, 51, 51);
     width: 300px;
     height: 200px;
 }
-#sideral {
-    width: 300px;
+.iframe {
+    width: 260px;
     height: 200px;
-}
-#entrevista {
-    width: 300px;
-    height: 200px;
-}
-#antigua {
-    width: 300px;
-    height: 200px;
+    box-shadow: black solid 3px;
 }
 
 #maisvideos {
@@ -231,7 +239,7 @@ button#play a:hover {
 .cds {
     background-color: rgba(0, 0, 0, 0.795);
     padding: 40px 0px 30px 0px;
-    height: 450px;
+    height: 600px;
     position: relative;
 }
 
@@ -250,7 +258,7 @@ button#play a:hover {
     align-items: center;
     flex-wrap: nowrap;
     gap: 114px;
-    height: 300px;
+    height: 400px;
 }
 
 .titulocd {
@@ -262,10 +270,6 @@ button#play a:hover {
 
 .titulocd > p {
     padding-bottom: 15px;
-}
-
-.audiocontrole {
-    /* como alterar o design? */
 }
 
 footer {
@@ -284,4 +288,8 @@ footer > p a{
 footer > p a:hover {
     text-decoration: none;
     color: #CC7F40;
+}
+
+@media (min-width: 460px) {
+    
 }

@@ -28,6 +28,24 @@
     margin: 0px; 
     padding: 0px;
 }
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+}
+
 .navbar {
     font-size: 1em;
     float: right;
@@ -35,9 +53,7 @@
     margin: 10px 10px 10px;
     text-align: center;
     padding: 15px 10px 15px 10px;
-    width: 420px;
-    position: sticky;
-    top: 0;
+    width: 330px;
 }
 
 nav a {
@@ -54,6 +70,7 @@ nav a:hover {
     color: white;
     text-decoration: underline;
 }
+
 header > img {
     width: 80px;
     height: 80px;
@@ -76,7 +93,6 @@ body{
      */
 }
 main {
-    top: 70px;
     max-width: 800px;
     min-width: 400px;
     margin: auto;
@@ -85,7 +101,7 @@ main {
     text-align: justify;
     font-size: 1.3em;
     line-height: 3em;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
     position: relative;
 }
 
@@ -114,7 +130,7 @@ section.imagem > p {
 
 footer {
     background-color: #855365e1;
-    padding: 4px;
+    padding: 10px;
     color: whitesmoke;
     text-align: center;
     font-size: 1.2em;
@@ -125,7 +141,6 @@ footer > p a{
     text-decoration: none;
     color: #634266;
 }
-
 footer > p a:hover {
     text-decoration: none;
     color: #CC7F40;

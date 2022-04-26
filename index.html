@@ -13,22 +13,21 @@
 <body>
     <header>        
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="photos.html">Photos</a>
-            <a href="mailto:mndragorabrasil@gmail.com"><i class="far fa-envelope"></i></a>
-            <a href="https://www.instagram.com/mandragorabrasil/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/mandragora.danielsarkisyjorgebrasil" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-soundcloud"></i></a>
+            <button id="btn-mobile">Menu</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="mailto:mndragorabrasil@gmail.com"><i class="far fa-envelope"></i></a></li>
+                <li><a href="https://www.instagram.com/mandragorabrasil/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/mandragora.danielsarkisyjorgebrasil" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-soundcloud"></i></a></li>
+            </ul>
         </nav>  
     </header>
     <main>
         <section class="imagem1">
-            <img 
-                src="Mandragora - Photo Jandir RIbeiro-pequena.jpg" alt="Foto Mandragora show"
-                title="Foto mandragora by Jandir Ribeiro"
-                id ="fotoJandir"
-            >
+        
             <div id="logo">
                 <img src="marca_icone-03.png" alt="logo do Mandragora">
             </div>
@@ -57,16 +56,16 @@
             
             <div class="bottom-bar">
                 <div class="bottom-video">
-                    <iframe  id="tatanka" src="https://www.youtube.com/embed/3pM_GKOdYyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  class="iframe" src="https://www.youtube.com/embed/3pM_GKOdYyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="bottom-video" >
-                    <iframe id="sideral" src="https://www.youtube.com/embed/YC2AZ18SXqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="iframe"  src="https://www.youtube.com/embed/YC2AZ18SXqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="bottom-video" >
-                    <iframe id="entrevista" src="https://www.youtube.com/embed/CVooTAOq-c0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="iframe"  src="https://www.youtube.com/embed/CVooTAOq-c0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="bottom-video" >
-                    <iframe id="antigua" src="https://www.youtube.com/embed/32Ebcz9Meik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="iframe" src="https://www.youtube.com/embed/32Ebcz9Meik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -100,6 +99,24 @@
             </div>
         </section>
 
+        <form action="" method="POST">
+            <fieldset>
+                <legend>
+                    Não perca os próximos shows do Mandragora!
+                </legend>
+                <label for="">
+                    Nome:
+                    <input type="text" name="" id="">
+                </label>
+                
+                <label for="">
+                    E-mail: 
+                    <input type="email">
+                </label>
+               
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
 </main> 
 <footer>   
     <p>Mandragora Site by <a href="https://github.com/mari1902" target="_blank">Mari Nagatani.</a></p>
