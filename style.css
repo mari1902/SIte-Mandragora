@@ -43,24 +43,6 @@
     padding: 0px;
 }
 
-#btn-mobile {
-    display: none;
-}
-
-@media (max-width: 600px) {
-    #btn-mobile {
-        display: block;
-    }
-    #menu {
-        display: none;
-    }
-}
-
-#menu {
-    display: flex;
-    list-style: none;
-}
-
 .navbar {
     font-size: 1em;
     float: right;
@@ -276,7 +258,7 @@ footer {
     background-color: #855365e1;
     padding: 10px;
     color: whitesmoke;
-    height: 200px;
+    height: 100px;
     text-align: center;
     font-size: 1.2em;
     font-family: var(--fonte-padrao);
@@ -289,8 +271,4 @@ footer > p a {
 footer > p a:hover {
     text-decoration: none;
     color: #CC7F40;
-}
-
-@media (min-width: 460px) {
-    
 }
