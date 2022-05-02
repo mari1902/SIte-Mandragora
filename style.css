@@ -44,6 +44,7 @@
 }
 
 .navbar {
+    display: flex;
     font-size: 1em;
     float: right;
     background-color: #4456434b;
@@ -51,6 +52,7 @@
     text-align: center;
     padding: 15px 10px 15px 10px;
     width: 330px;
+    text-decoration: none;
 }
 
 nav a {
