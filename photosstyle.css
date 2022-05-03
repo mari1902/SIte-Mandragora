@@ -31,25 +31,8 @@ body {
     background-color: #634266;
 }
 
-#btn-mobile {
-    display: none;
-}
-
-@media (max-width: 600px) {
-    #btn-mobile {
-        display: block;
-    }
-    #menu {
-        display: none;
-    }
-}
-
-#menu {
-    display: flex;
-    list-style: none;
-}
-
 .navbar {
+    display: flex;
     font-size: 1em;
     float: right;
     background-color: #4456434b;
@@ -57,6 +40,7 @@ body {
     text-align: center;
     padding: 15px 10px 15px 10px;
     width: 330px;
+    list-style-type: none;
 }
 
 nav a {
@@ -73,7 +57,6 @@ nav a:hover {
     color: white;
     text-decoration: underline;
 }
-
 
 #tituloFotos {
     font-size: 4.0em; 
@@ -198,4 +181,28 @@ nav a:hover {
     font-family: var(--fonte-mandragora);
     color: antiquewhite;
     width: fit-content;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    background-color: #855365e1;
+    color: whitesmoke;
+    height: 200px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--fonte-padrao);
+    line-height: 1.5em;
+}
+
+footer > p a {
+    text-decoration: none;
+    color: #634266;
+}
+footer > p a:hover {
+    text-decoration: none;
+    color: #CC7F40;
 }
