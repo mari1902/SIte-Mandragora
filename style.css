@@ -153,6 +153,7 @@ button#play a:hover {
 .dvd {
     background-color: rgb(0, 0, 0, 0.795);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -264,7 +265,7 @@ button p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 114px;
     height: 400px;
 }
